@@ -1,0 +1,472 @@
+.navbar {
+    background: #1d1e22;
+    font-family: 'Baloo Bhaijaan 2';
+}
+
+.navbar-brand {
+    color: whitesmoke !important;
+}
+
+.nav-link {
+    color: #f5f5f5 !important;
+}
+
+.nav-link:hover {
+    color: white !important;
+    transform: scale(1.3);
+}
+
+.navbar-toggler {
+    box-shadow: none !important;
+    position: relative;
+    display: flex;    
+    width: 50px;
+    height: 32px;
+    border: 2px solid;
+}
+
+.navbar-toggler.collapsed .a,
+.navbar-toggler.collapsed .b,
+.navbar-toggler.collapsed .c {
+    content: '';
+    position: absolute !important;
+    width: 50%;
+    height: 2px;
+    background: #f5f5f5;
+    transition: all 0.5s;
+}
+
+.navbar-toggler .a,
+.navbar-toggler .b,
+.navbar-toggler .c {
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    background: crimson;
+    transition: all 0.5s;
+}
+
+.navbar-toggler.collapsed .a {
+    top: 20%;
+    transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .b {
+    top: 46%;
+    opacity: 1;
+}
+
+.navbar-toggler.collapsed .c {
+    top: 72%;
+    transform: rotate(0);
+}
+
+.navbar-toggler .a {
+    transform: rotate(45deg);
+    transform-origin: center;
+    top: 50%;
+}
+
+.navbar-toggler .b {
+    width: 0;
+    top: 50%;
+}
+
+.navbar-toggler .c {
+    transform: rotate(-45deg);
+    transform-origin: center;
+    top: 50%;
+}
+
+.welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Baloo Bhaijaan 2';
+    font-weight: 900;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    color: whitesmoke;
+    background-color: #444857;
+    background-image: linear-gradient(45deg, 
+    rgba(68, 72, 87,0.9), rgba(84, 72, 87,0.9)),
+    url(img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.welcome-section img {
+    width: 200px;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.about {
+    padding-top: 4rem;
+    color: #444857;
+    background-image: linear-gradient(to bottom,
+    rgba(236, 237, 238,0.1), rgba(236, 237, 238,1));
+    font-family: 'Baloo Bhaijaan 2';
+}
+
+.projects {
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+    color: #444857;
+    background-image: linear-gradient(to top,
+    rgba(68, 72, 87,1),
+    rgba(68, 72, 87, 0.1));
+    font-family: 'Baloo Bhaijaan 2';
+}
+
+.project {
+    text-decoration: none;
+    color: #444857;
+}
+
+.project .code {
+    opacity: 0;
+    color: tomato;
+    transition: all 0.5s;
+}
+
+.project:hover .code {
+    opacity: 1;
+}
+
+.btn-showprojects {
+    color: #f5f5f5;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    padding: 10px 15px;
+    margin: 0;
+    background: #1d1e22;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn-showprojects:hover {
+    background: rgba(10, 88, 212, 0.6);
+    color: #f5f5f5;
+}
+
+.skill {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    font-family: 'Baloo Bhaijaan 2';
+    color: #f5f5f5;
+    background: #444857;
+}
+
+.skill img {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 100px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.skill img:hover {
+    transform: scale(1.5);
+}
+
+.certificate {
+    font-family: 'Baloo Bhaijaan 2';
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    background: linear-gradient(#444857,#f5f5f5,#444857);
+}
+
+.certificate h1 {
+    color: #f5f5f5;
+}
+
+.certificate .card-body {
+    color: #444857;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Baloo Bhaijaan 2';
+    font-weight: 900;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+    color: whitesmoke;
+    background-color: #444857;
+    padding: 0 2rem;
+}
+
+.contact-links {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.profile-link {
+    color: #f5f5f5;
+    text-decoration: none;
+    padding: 20px;
+    transition: all 0.5s;
+    transform: translate(0);
+}
+
+.profile-link:hover {
+    color: antiquewhite;
+    transform: translateY(15px);
+}
+
+.footer {
+    color: #f5f5f5;
+    background-color: #444857;
+    padding-bottom: 10px;
+}
+
+.footer p {
+    padding-top: 10px;
+    padding-bottom: 0;
+    margin: 0;
+}
+
+.footer i {
+    color: crimson;
+}
+
+.footer .garis {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: #f5f5f5;
+}
+
+.footer .container-fluid {
+    padding: 0 !important;
+}
+
+/* Pages project.html this style project */
+.back-to-top {
+    content: '';
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    bottom: 70px;
+    right: 40px;
+}
+
+.bi.bi-arrow-up-square-fill:before {
+    font-size: 2rem;
+    font-weight: bold;
+    color:#444857;
+    text-decoration: none;
+    box-sizing: none;
+}
+
+.project1 {
+    padding-top: 4rem;
+}
+
+.project1,
+.cetak,
+.galeri {
+    background-color: #f5f5f5;
+}
+
+img.img-thumbnail.thumbs.rounded-circle {
+    width: 100%;
+}
+
+.project1 .thumbs {
+    background-color: #444857;
+}
+
+.project1 a:hover img.thumbs {
+    animation: rgb 1.5s infinite;
+}
+
+.overlay {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 99999;
+    transition: 0.6s;
+    text-align: center;
+    padding: 100px;
+}
+
+.overlay h5,
+.overlay p {
+    opacity: 0;
+    transition: 0.6s;
+}
+
+.overlay:target h5,
+.overlay:target p {
+    opacity: 1;
+}
+
+.overlay:target {
+    width: auto;
+    height: auto;
+    visibility: visible;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.overlay img {
+    max-height: 100%;
+    max-width: 100%;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.7);
+}
+
+.overlay:target img {
+    animation: fade 1s;
+}
+
+.overlay .close {
+    font-size: 24px;
+    color: red;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    margin-left: -22px;
+    opacity: 0;
+}
+
+.overlay:target .close {
+    animation: slideBottom 1.5s  forwards;
+}
+
+.overlay .next {
+    font-size: 36px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    right: 40px;
+    opacity: 0;
+}
+
+.overlay:target .next {
+    animation: slideRight 0.6s 0.4s forwards ;
+}
+
+.overlay .prev {
+    font-size: 36px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    opacity: 0;
+}
+
+.overlay:target .prev {
+    animation: slideLeft 0.6s 0.4s forwards;
+}
+
+.cetak .row > *,
+.galeri .row > * {
+    padding: 0;
+    padding-bottom: 20px;
+}
+
+.galeri a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000000;   
+}
+
+/* Animasi */
+@keyframes fade {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes slideBottom {
+    0% {
+        opacity: 0;
+        margin-top: -50px;
+    }
+    100% {
+        margin-top: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes slideRight {
+    0% {
+        opacity: 0;
+        margin-right: -50px;
+    }
+    100% {
+        margin-right: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft {
+    0% {
+        opacity: 0;
+        margin-left: -50px;
+    }
+    100% {
+        margin-left: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes rgb {
+    0% {
+        background-color: #2b75ff;
+    }
+    50% {
+        background-color: #87ceeb;
+    }
+    100% {
+        background-color: #2b75ff;
+    }
+}
+/* End Animasi */
+/* End Pages project.html*/
+
+/* Breakpoint Maximal Desktop atau large */
+@media (min-width: 992px) {
+    .navbar ul li {
+        position: relative;
+    }
+    
+    .navbar ul li:before {
+        content: '';
+        position: absolute;
+        top: 30px;
+        left: 20%;
+        width: 60%;
+        height: 2px;
+        background: #f5f5f5;
+        transition: all 0.2s;
+        transform: scale(0);
+    }
+    
+    .navbar ul li:hover:before {
+        width: 60%;
+        transform: scale(1);
+    }
+}
+
+/* End Breakpoint */
