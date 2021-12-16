@@ -13,5 +13,5 @@ gsap.from('.welcome-section img', {duration:1.5, rotateY: 360, opacity:0});
 // AOS JS
 AOS.init({
     once: true, // Animasi dijalankan satu kali saja. Kecuali di Load.
-    offset: 100, // Offset Animasi berjalan sebelum 100px
+    offset: 400, // Offset Animasi berjalan sebelum 100px
 });
