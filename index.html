@@ -12,6 +12,9 @@
     <!-- link AOS 3.0.0 Beta -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
+    <!-- Link Fake Loader -->
+	<link rel="stylesheet" href="css/fakeLoader.css">
+
     <!-- Link style.css -->
     <link rel="shortcut icon" href="img/icon/portfolio.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
@@ -23,6 +26,9 @@
 
 </head>
 <body>
+
+<div class="fakeLoader"></div>
+
 <!-- Navbar On Top -->
 <nav class="navbar navbar-expand-lg navbar-dark shadow fixed-top" id="navbar">
     <div class="container">
@@ -59,7 +65,7 @@
 <!-- End Navbar -->
 
 <!-- Start Section Home Welcome Screen -->
-<section id="welcome-section" class="welcome-section">
+<section id="welcome-section" class="welcome-section jumbotron">
     <img src="img/profile.jpg" class="img-fluid" alt="">
     <h1 class="display-4"></h1>
     <p class="lead"></p>
@@ -75,10 +81,10 @@
             </div>
         </div>
         <div class="row justify-content-center text-center">
-            <div class="col-md-4 mb-2">
+            <div class="col-md-6 col-lg-4 mb-2">
               <p>Hi, Nama saya Van Due Niecky biasa dipangil vandu, pandu, ndu, lahir di Cirebon pada tanggal 14 Oktober 2000, latar belakang pendidikan saya SMA Sederajat jurusan IPA lulus pada tahun 2018. Hobi saya bermusik dan bermain game, Saya sangat suka belajar hal baru terutama mengasah kemampuan untuk bekerja agar suatu saat bisa menempatkan diri dimanapun.</p>
             </div>
-            <div class="col-md-4 mb-2">
+            <div class="col-md-6 col-lg-4 mb-2">
               <p>Pengalaman Bekerja saya di PT. Graha Prima Mentari (CCOD) Coca-cola Offical Distributor wilayah Ciayumajakuning, sebagai Kernek (Helper Delivery Man) selama 1 tahun dari November 2018 sampai Desember 2019 status resign (mengundurkan diri), Setelah itu di Proyek PLTU 2 Cirebon PT. Koin Kontruksi sebagai Semi Skill Divis Matrial Control selama 8 Bulan dari Mei 2020 sampai dengan Desember 2020.</p>
             </div>
         </div>
@@ -304,6 +310,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/TextPlugin.min.js"></script>
 <!-- AOS JS -->
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<!-- Fake Loader JS -->
+<script src="js/fakeLoader.js"></script>
 <!-- My JS -->
 <script src="script.js"></script>
     

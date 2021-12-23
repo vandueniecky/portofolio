@@ -99,6 +99,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    overflow: hidden;
 }
 
 .welcome-section img {
@@ -467,6 +468,9 @@ img.img-thumbnail.thumbs.rounded-circle {
     .navbar ul li:hover:before {
         width: 60%;
         transform: scale(1);
+    }
+    .project1 img.thumbs {
+        width: 10px;
     }
 }
 
